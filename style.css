@@ -1,0 +1,25 @@
+/* Mengimpor Tailwind CSS untuk kelas utilitas modern */
+@import "tailwindcss/tailwind.css";
+
+/* Kustomisasi Tambahan (Custom Styles) */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Sembunyikan scrollbar bawaan pada kategori filter horizontal agar terlihat bersih */
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Efek transisi halus pada kartu menu saat disentuh */
+article {
+    transition: all 0.2s ease-in-out;
+}
+article:active {
+    transform: scale(0.98);
+}
